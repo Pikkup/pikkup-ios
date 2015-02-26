@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PUUserCell" id="KGk-i7-Jjw" customClass="PUUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4x-jE-4CL">
+                        <rect key="frame" x="20" y="12" width="172" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-Uv-PDz">
+                        <rect key="frame" x="200" y="12" width="20" height="20"/>
+                    </imageView>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" fixedFrame="YES" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-7z-V6X">
+                        <rect key="frame" x="220" y="12" width="20" height="20"/>
+                    </imageView>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" fixedFrame="YES" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-c4-igH">
+                        <rect key="frame" x="240" y="12" width="20" height="20"/>
+                    </imageView>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" fixedFrame="YES" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="VlY-Aa-Mir">
+                        <rect key="frame" x="260" y="12" width="20" height="20"/>
+                    </imageView>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="center" fixedFrame="YES" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="Y5w-5g-Fpl">
+                        <rect key="frame" x="280" y="12" width="20" height="20"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-xr-wxk">
+                        <rect key="frame" x="20" y="7" width="172" height="30"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonUsernameTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Deo-m6-X10"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelUserName" destination="U4x-jE-4CL" id="Sto-Hb-Ul6"/>
+                <outletCollection property="imageViewsStars" destination="DhK-Uv-PDz" id="CCA-kx-8bc"/>
+                <outletCollection property="imageViewsStars" destination="jYb-7z-V6X" id="yJA-BL-tzI"/>
+                <outletCollection property="imageViewsStars" destination="bUA-c4-igH" id="EVF-ER-Pre"/>
+                <outletCollection property="imageViewsStars" destination="VlY-Aa-Mir" id="DY2-9T-c2A"/>
+                <outletCollection property="imageViewsStars" destination="Y5w-5g-Fpl" id="H1V-o3-oGN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star-full" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

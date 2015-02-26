@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EA153959-5BF2-4571-8478-300D816EC05C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>picktup</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>74B644D337BCB75311B89A5F977BB0A3CDA3F809</key>
+		<string>https://github.com/eric11598/pikkup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>picktup.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>74B644D337BCB75311B89A5F977BB0A3CDA3F809</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eric11598/pikkup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>74B644D337BCB75311B89A5F977BB0A3CDA3F809</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>74B644D337BCB75311B89A5F977BB0A3CDA3F809</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pikkup</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PUGameViewController">
+            <connections>
+                <outlet property="datePickerEndDate" destination="vZX-Tv-Y9M" id="SMP-FQ-78t"/>
+                <outlet property="datePickerStartDate" destination="HTT-Ta-SHi" id="Ieq-fa-jzt"/>
+                <outlet property="mapViewGameLocation" destination="w1B-Ax-ITR" id="3hc-Fz-Xdb"/>
+                <outlet property="textFieldEndDate" destination="U9s-zW-wQ7" id="hdb-5m-XEa"/>
+                <outlet property="textFieldStartDate" destination="cfU-aR-fHx" id="NZN-XE-ejA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-Ax-ITR">
+                    <rect key="frame" x="0.0" y="96" width="320" height="358"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JUk-h1-vnc"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDA-qk-1YI">
+                    <rect key="frame" x="0.0" y="454" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="prN-pd-89s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Quikmatch">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonQuickmatchTouchUpInside:" destination="-1" eventType="touchUpInside" id="COF-oQ-bUT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-Ke-D7t">
+                    <rect key="frame" x="20" y="19" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="3Z7-Aw-qLD"/>
+                        <constraint firstAttribute="height" constant="21" id="ili-r1-Zvd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4G-ch-Ceu">
+                    <rect key="frame" x="20" y="57" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="jj3-bO-xak"/>
+                        <constraint firstAttribute="height" constant="21" id="uQl-Yw-5Ao"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfU-aR-fHx">
+                    <rect key="frame" x="70" y="15" width="230" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="NIi-Ca-Ypq"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-zW-wQ7">
+                    <rect key="frame" x="70" y="53" width="230" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gdf-fD-BJ3"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.74117647058823533" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="w1B-Ax-ITR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6rE-NT-9K1"/>
+                <constraint firstItem="cfU-aR-fHx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="83J-UQ-oVO"/>
+                <constraint firstItem="BWe-Ke-D7t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="APt-hr-JyK"/>
+                <constraint firstItem="u4G-ch-Ceu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Akl-7Y-K74"/>
+                <constraint firstAttribute="trailing" secondItem="oDA-qk-1YI" secondAttribute="trailing" id="LXe-Vh-QqP"/>
+                <constraint firstAttribute="bottom" secondItem="oDA-qk-1YI" secondAttribute="bottom" id="Mhb-PL-R9m"/>
+                <constraint firstAttribute="trailing" secondItem="cfU-aR-fHx" secondAttribute="trailing" constant="20" id="P5Y-mU-2DU"/>
+                <constraint firstItem="cfU-aR-fHx" firstAttribute="leading" secondItem="BWe-Ke-D7t" secondAttribute="trailing" constant="8" id="VQC-j0-exC"/>
+                <constraint firstAttribute="trailing" secondItem="w1B-Ax-ITR" secondAttribute="trailing" id="XIM-1D-bX4"/>
+                <constraint firstItem="oDA-qk-1YI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YyD-P4-lfG"/>
+                <constraint firstItem="BWe-Ke-D7t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="eMu-BR-ysz"/>
+                <constraint firstAttribute="trailing" secondItem="U9s-zW-wQ7" secondAttribute="trailing" constant="20" id="gGg-TP-xQh"/>
+                <constraint firstItem="u4G-ch-Ceu" firstAttribute="top" secondItem="BWe-Ke-D7t" secondAttribute="bottom" constant="17" id="hsF-1A-iPb"/>
+                <constraint firstAttribute="bottom" secondItem="w1B-Ax-ITR" secondAttribute="bottom" constant="50" id="kRd-LX-SWu"/>
+                <constraint firstItem="U9s-zW-wQ7" firstAttribute="leading" secondItem="u4G-ch-Ceu" secondAttribute="trailing" constant="8" id="rQr-eZ-2DM"/>
+                <constraint firstItem="w1B-Ax-ITR" firstAttribute="top" secondItem="U9s-zW-wQ7" secondAttribute="bottom" constant="13" id="uK3-zf-Wpt"/>
+                <constraint firstItem="U9s-zW-wQ7" firstAttribute="top" secondItem="cfU-aR-fHx" secondAttribute="bottom" constant="8" id="uQE-NA-nHJ"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="vZX-Tv-Y9M">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="422185927.49742103">
+                <!--2014-05-19 09:52:07 +0000-->
+            </date>
+        </datePicker>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="HTT-Ta-SHi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="422185938.75572199">
+                <!--2014-05-19 09:52:18 +0000-->
+            </date>
+        </datePicker>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

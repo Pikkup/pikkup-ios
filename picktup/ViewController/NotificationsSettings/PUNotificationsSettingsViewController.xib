@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PUNotificationsSettingsViewController">
+            <connections>
+                <outlet property="tableViewNotifications" destination="VIF-FN-NFO" id="tcH-wF-l01"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you enable notifications you will be informed about games near your location." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd5-wp-dMa">
+                    <rect key="frame" x="8" y="8" width="304" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="nG3-3h-7CD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VIF-FN-NFO">
+                    <rect key="frame" x="0.0" y="63" width="320" height="441"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OPB-B8-Ebo"/>
+                        <outlet property="delegate" destination="-1" id="OgK-lI-zoh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VIF-FN-NFO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1jk-uN-qKl"/>
+                <constraint firstAttribute="trailing" secondItem="VIF-FN-NFO" secondAttribute="trailing" id="3nq-TN-XeX"/>
+                <constraint firstAttribute="trailing" secondItem="pd5-wp-dMa" secondAttribute="trailing" constant="8" id="4nc-3h-RN8"/>
+                <constraint firstAttribute="bottom" secondItem="VIF-FN-NFO" secondAttribute="bottom" id="Kwi-Xl-WP4"/>
+                <constraint firstItem="VIF-FN-NFO" firstAttribute="top" secondItem="pd5-wp-dMa" secondAttribute="bottom" constant="8" id="vMh-hz-GIi"/>
+                <constraint firstItem="pd5-wp-dMa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="yur-Ly-lW1"/>
+                <constraint firstItem="pd5-wp-dMa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zsH-yb-Vy9"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="443" y="273"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

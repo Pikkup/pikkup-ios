@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PUSkillAlertContentView">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u38-60-4Qf">
+                    <rect key="frame" x="20" y="25" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="star-empty">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStarTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="yUR-3o-da3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tvq-Ss-2X2">
+                    <rect key="frame" x="128" y="25" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="star-empty">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStarTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="rFZ-Ee-sOI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mD3-ge-R6p">
+                    <rect key="frame" x="74" y="25" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="star-empty">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStarTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="P3r-Tn-Pxj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vDb-rQ-UBy">
+                    <rect key="frame" x="101" y="25" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="star-empty">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStarTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="iKq-Ff-kAE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tLa-QP-pxl">
+                    <rect key="frame" x="47" y="25" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="star-empty">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStarTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="DWT-V4-QDV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="buttonsStars" destination="u38-60-4Qf" id="rzA-Li-tQK"/>
+                <outletCollection property="buttonsStars" destination="tLa-QP-pxl" id="OvG-E2-oUf"/>
+                <outletCollection property="buttonsStars" destination="mD3-ge-R6p" id="LL2-93-qbE"/>
+                <outletCollection property="buttonsStars" destination="vDb-rQ-UBy" id="i9U-6m-dqC"/>
+                <outletCollection property="buttonsStars" destination="Tvq-Ss-2X2" id="clT-Bm-Xvi"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="star-empty" width="20" height="20"/>
+    </resources>
+</document>
